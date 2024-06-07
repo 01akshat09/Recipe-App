@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import React from "react";
+import RecipeCard from "../components/RecipeCard";
 
 const HomePage = () => {
   const handdleSearchRecipie = () => {
@@ -25,6 +26,10 @@ const HomePage = () => {
         <p className="font-semibold text-slate-500  ml-1 my-2 text-sm tracking-tight">
           Popular Choices
         </p>
+
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <RecipeCard />
+        </div>
       </div>
     </div>
   );
